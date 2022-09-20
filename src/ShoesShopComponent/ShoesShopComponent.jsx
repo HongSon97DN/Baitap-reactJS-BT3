@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import ProductDetail from './ProductDetail'
 import ProductList from './ProductList'
 
 export default class ShoesShopComponent extends Component {
@@ -127,7 +128,7 @@ export default class ShoesShopComponent extends Component {
     ]
 
     state = {
-        shoesInfo: this.arrayShoes[0]
+        shoesInfo: {}
     }
 
     showDetail = (item) => {
@@ -137,7 +138,6 @@ export default class ShoesShopComponent extends Component {
     }
 
     render() {
-        let { name, price, image, shortDescription, quantity } = this.state.shoesInfo;
         return (
             <>
                 <div className="container py-5">
@@ -157,35 +157,7 @@ export default class ShoesShopComponent extends Component {
                         </div>
                     </div>
                     <div className="row py-5" style={{border:"1px solid black"}}>
-                        <>
-                        <div className="col-4 text-center">
-                            <h3>{name}</h3>
-                            <img className='img-fluid' src={image} alt="" />
-                        </div>
-                        <div className="col-8">
-                            <h2>Thông tin sản phẩm</h2>
-                            <table className="table">
-                                <thead>
-                                    <tr>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Price</td>
-                                        <td>{price}$</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Quantity</td>
-                                        <td>{quantity}</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Description</td>
-                                        <td>{shortDescription}</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        </>
+                        <ProductDetail shoesInfo={this.state.shoesInfo}/>
                     </div>
                 </div>
             </>

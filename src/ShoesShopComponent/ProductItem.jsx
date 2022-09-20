@@ -10,7 +10,7 @@ export default class ProductItem extends Component {
                 <div className="card-body">
                     <h5 className="card-title">{item.name}</h5>
                     <p className="card-text">{item.price}$</p>
-                    <ProductDetail item={item} showDetail={showDetail}/>
+                    <button onClick={() => {showDetail(item)}} className="btn btn-primary">Xem Chi Tiết</button>
                 </div>
             </div>
         )
