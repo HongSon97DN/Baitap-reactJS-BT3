@@ -1,16 +1,45 @@
-.container .nav-link{
-    background-color: rgb(157, 71, 238);
-    border: 1px solid black;
-    border-radius: 10px;
-    color: #fff;
-    margin: 10px 0;
-    text-align: center;
+.container{
+    border: #b61984 1px solid;
 }
-.container .nav-link:hover{
+.container .nav-item{
+    background: transparent;
+    border-radius: 50px;
+    border: 1px solid #b61984;
+    padding: 0.3rem;
+    letter-spacing: 0;
+    color: #fff;
+    font-size: 1rem;
+    box-shadow: 0 0 0 3em #b61984 inset;
+    margin: 10px 0;
+}
+.container .nav-item:hover{
+    background-color: #fff;
     cursor: pointer;
-    background-color: rgb(228, 153, 15);
+    box-shadow: 0 0 0 1px #fff inset;
+    transition: all 0.5s;
+}
+.container .nav-item:hover a, .list-item{
+    color: #b61984;
+}
+.container .nav-item:hover .nav-link .list-item{
+    color: #b61984;
 }
 .card-body.d-flex{
     flex-direction: column;
     justify-content: space-between;
+}
+.nav-item.d-flex a{
+    color: #fff;
+}
+.list-item{
+    margin-right: 20px;
+    color: #fff;
+}
+.container .cyber-shoes{
+    text-align: center;
+    background-color: #b61984;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 0;
+    text-transform: uppercase;
 }

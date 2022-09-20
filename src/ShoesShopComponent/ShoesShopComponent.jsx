@@ -141,14 +141,39 @@ export default class ShoesShopComponent extends Component {
         return (
             <>
                 <div className="container py-5">
+                    <h2 className='cyber-shoes'>Cyber Store</h2>
                     <div className="row">
                         <div className="col-3">
                             <ul className="nav flex-column">
-                                <li className="nav-item">
-                                    <a className="nav-link active" href="#">Home</a>
+                                <li className="nav-item d-flex">
+                                    <a className="nav-link" href="#">
+                                        <i className="fa-solid fa-caret-right list-item"></i>
+                                        Home
+                                    </a>
                                 </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#">Shop</a>
+                                <li className="nav-item d-flex">
+                                    <a className="nav-link" href="#">
+                                        <i className="fa-solid fa-caret-right list-item"></i>
+                                        Shop
+                                    </a>
+                                </li>
+                                <li className="nav-item d-flex">
+                                    <a className="nav-link" href="#">
+                                    <i className="fa-solid fa-caret-right list-item"></i>
+                                        About us
+                                    </a>
+                                </li>
+                                <li className="nav-item d-flex">
+                                    <a className="nav-link" href="#">
+                                    <i className="fa-solid fa-caret-right list-item"></i>
+                                        Blog
+                                    </a>
+                                </li>
+                                <li className="nav-item d-flex">
+                                    <a className="nav-link" href="#">
+                                    <i className="fa-solid fa-caret-right list-item"></i>
+                                        Contact
+                                    </a>
                                 </li>
                             </ul>
                         </div>
