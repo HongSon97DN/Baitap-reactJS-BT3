@@ -11,7 +11,7 @@ export default class ProductItem extends Component {
                     <h5 className="card-title">{item.name}</h5>
                     <p className="card-text">{item.price}$</p>
                     <div className='card-bottom'>
-                        <button onClick={() => { showDetail(item) }} className="btn btn-primary">Xem Chi Tiết</button>
+                        <button onClick={() => { showDetail(item) }} className="btn btn-primary" data-toggle="modal" data-target="#itemModal">Xem Chi Tiết</button>
                     </div>
                 </div>
             </div>

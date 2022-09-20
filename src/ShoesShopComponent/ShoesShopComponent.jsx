@@ -156,7 +156,7 @@ export default class ShoesShopComponent extends Component {
                             <ProductList arrayShoes={this.arrayShoes} showDetail={this.showDetail}/>
                         </div>
                     </div>
-                    <div className="row py-5" style={{border:"1px solid black"}}>
+                    <div className="row py-5">
                         <ProductDetail shoesInfo={this.state.shoesInfo}/>
                     </div>
                 </div>
